@@ -1,0 +1,108 @@
+/* Paleta de Colores */
+:root {
+    --citrus: #FAAF08;
+    --grapefruit: #FA812F;
+    --ruby-red: #FA4032;
+    --off-white: #FEF3E2;
+}
+
+/* Estilos Generales */
+body {
+    
+    background-color: var(--off-white);
+    color: #333;
+    margin: 0;
+    padding: 0;
+   
+}
+
+h3, h4 {
+    color: var(--ruby-red);
+}
+
+.card {
+    border: 1px solid var(--grapefruit);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: var(--citrus);
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid var(--grapefruit);
+    border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.form-floating .form-control {
+    border: 1px solid var(--grapefruit);
+}
+
+.form-floating .form-label {
+    color: var(--ruby-red);
+}
+
+.form-select {
+    border: 1px solid var(--grapefruit);
+}
+
+.input-group .form-control {
+    border: 1px solid var(--grapefruit);
+}
+
+.btn-primary {
+    background-color: var(--citrus);
+    border-color: var(--citrus);
+}
+
+.btn-danger {
+    background-color: var(--ruby-red);
+    border-color: var(--ruby-red);
+}
+
+.btn-success {
+    background-color: var(--grapefruit);
+    border-color: var(--grapefruit);
+}
+
+.table-hover tbody tr:hover {
+    background-color: var(--citrus);
+}
+
+.table th {
+    background-color: var(--grapefruit);
+    color: white;
+}
+
+.table td {
+    border-top: 1px solid var(--grapefruit);
+}
+
+/* Estilos Adicionales */
+.mt-2 {
+    margin-top: 20px;
+}
+
+.mb-4 {
+    margin-bottom: 40px;
+}
+
+.m-2 {
+    margin: 20px;
+}
+
+.m-3 {
+    margin: 30px;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+

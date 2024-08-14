@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Registro de Usuarios</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../style/fontawesome-free-6.4.0-web/css/all.min.css">
+        <link rel="stylesheet" href="../style/sweetalert2/sweetalert2.min.css">
+        <style>
+            .h2 {
+                color: #FAAF08;
+            }
+            .search-bar {
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 10px;
+            }
+            body {
+                font-family: 'Arial Black', Arial, sans-serif;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row justify-content-center text-center mt-2">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <div class="search-bar">
+                                <input id="searchInput" type="text" class="form-control" placeholder="Buscar usuario por nombre">
+                                <button onclick="buscarUsuario()" class="btn buscar ml-2"><i class="fas fa-search"></i> Consultar</button>
+                            </div>
+                            <h1>Registro de Usuarios</h1>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <form id="userForm">
+                                    <label for="userId" class="form-label">ID de Usuario:</label>
+                                    <input id="userId" type="text" class="form-control" placeholder="Ingresa el ID"/>
+                                    <label for="userName" class="form-label">Nombre de Usuario:</label>
+                                    <input id="userName" type="text" class="form-control" placeholder="Ingresa el nombre"/>
+                                    <label for="userPassword" class="form-label">Contraseña:</label>
+                                    <input class="col-12 form-control mt-1" type="text" id="userPassword" placeholder="La contraseña se genera automáticamente" disabled>
+                                    <div class="mt-2">
+                                        <button type="button" onclick="guardarUsuario()" class="btn registrar m-2"><i class="fas fa-save"></i> Guardar</button>                        
+                                        <button type="button" onclick="eliminarUsuario()" class="btn eliminar m-2"><i class="fas fa-trash"></i> Eliminar</button>
+                                        <button type="button" onclick="actualizarUsuario()" class="btn modificar m-2"><i class="fas fa-edit"></i> Modificar</button>
+                                    </div>
+                                </form>
+                                <p id="message"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h2>Lista de Usuarios</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Nombre</th>
+                                            <th>Contraseña</th>
+                                            <th>Acciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="userTableBody">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+        <script type="module" src="../js/usuario.js"></script>
+        <script src="../style/sweetalert2/sweetalert2.all.min.js"></script>
+    </body>
+</html>

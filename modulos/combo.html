@@ -1,0 +1,121 @@
+<div id="divDetalleCombo" class="row justify-content-center text-center mt-2" style="display: none;">
+    <h3>Gestión de Combos</h3>
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header text-center">
+                <span class="h4">Detalle del Combo</span>
+
+                <button class="btn btn-outline-danger float-end" onclick="setDetalleComboVisible(false);">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-2 mb-4">
+                        <div class="form-floating">
+                            <input id="txtIdCombo" type="text" class="form-control" placeholder="ID" readonly/>
+                            <label for="txtIdCombo" class="form-label">Id Combo</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4">
+                        <div class="form-floating">
+                            <input id="txtNombreCombo" type="text" class="form-control" placeholder="Nombre del Combo">
+                            <label for="txtNombreCombo" class="form-label">Nombre del Combo</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-floating">
+                            <input id="txtPrecioCombo" type="text" class="form-control" placeholder="Precio: $"/>
+                            <label for="txtPrecioCombo" class="form-label">Precio</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-floating">
+                            <input id="txtDescripcionCombo" type="text" class="form-control" placeholder="Descripción">
+                            <label for="txtDescripcionCombo" class="form-label">Descripción</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-4">
+                        <div class="form-floating">
+                            <input id="txtAlimentoCombo" type="text" class="form-control" placeholder="Alimento">
+                            <label for="txtAlimentoCombo" class="form-label">Alimento</label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-floating">
+                            <input id="txtBebidaCombo" type="text" class="form-control" placeholder="Bebida">
+                            <label for="txtBebidaCombo" class="form-label">Bebida</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mx-auto">
+                        <button type="button" class="btn btn-primary" onclick="guardar();">
+                            <i class="fas fa-save me-2"></i>
+                            Guardar
+                        </button>
+                        <button type="button" class="btn btn-danger" onclick="eliminar();">
+                            <i class="fas fa-trash me-2"></i>
+                            Eliminar
+                        </button>
+                        <button type="button" class="btn btn-success" onclick="limpiar();">
+                            <i class="fas fa-broom me-2"></i>
+                            Limpiar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>               
+</div>
+
+<div id="divCatalogoCombos" class="row mt-2">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <span class="h3">Catálogo de Combos</span>
+                <button class="btn btn-outline-danger float-end" onclick="mostrarFormularioNuevo();">
+                    <i class="fas fa-plus me-2"></i>
+                    Nuevo
+                </button>
+            </div>
+            <div class="card-body">
+                <table class="table table-hover">
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <input type="text" id="txtBuscarCombo" class="form-control me-2" placeholder="Buscar combo por nombre">
+                            <button class="btn btn-outline-danger" onclick="buscarCombo();">
+                                <i class="fas fa-search me-2"></i>
+                                Consultar
+                            </button>
+                        </div>
+
+                    </div>
+                    <thead mt-4>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Descripción</th>
+                            <th>Alimento</th>
+                            <th>Bebida</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyCombos">
+                        <!-- Los datos se llenarán aquí automáticamente -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/js/all.min.js"></script>
+<script src="modulos/combo.js"></script>
+

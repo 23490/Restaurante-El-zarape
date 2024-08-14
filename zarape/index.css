@@ -1,0 +1,28 @@
+.card-header {
+    background-color: #FAAF08; /* citrus */
+    color: white; /* white text for contrast */
+}
+#txtUsuario {
+    border: 2px solid #FA812F;
+    box-shadow: none;
+    color: #FAAF08;
+}
+#txtUsuario::placeholder {
+    color: #FA4032;
+}
+#txtContrasenia {
+    border: 2px solid #FA812F;
+    box-shadow: none;
+}
+#txtContrasenia::placeholder {
+    color: #FA4032;
+}
+.Ingresar {
+    background-color: #FAAF08;
+    border-color: #FAAF08;
+    color: #FFFFFF;
+    border-radius: 5px; /* Bordes redondeados */
+}
+h1 {
+    color: white;
+}

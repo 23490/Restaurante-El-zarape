@@ -1,0 +1,73 @@
+.card-header {
+    background-color: #FAAF08; /* citrus */
+    color: white; /* white text for contrast */
+}
+
+#userId {
+    color: #FA4032;
+}
+#userId::placeholder {
+    color: #FA4032;
+}
+#userName {
+    color: #FA4032;
+}
+#userName::placeholder {
+    color: #FA4032;
+}
+#userPassword::placeholder {
+    color: #FA4032;
+}
+
+.registrar {
+    background-color: #FAAF08;
+    border-color: #FAAF08;
+    color: #FFFFFF;
+    border-radius: 5px; /* Bordes redondeados */
+}
+.h2 {
+    color: #FAAF08;
+}
+
+input.form-control {
+    border: 2px solid #FAAF08;
+    box-shadow: none;
+}
+
+input.form-control:focus {
+    border-color: #FAAF08;
+    box-shadow: 0 0 0 0.25rem rgba(250, 175, 8, 0.25);
+}
+.eliminar {
+    background-color: #FA4032;
+    border-color: #FA4032;
+    color: #FFFFFF;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.modificar {
+    background-color:#FA812F;
+    border-color: #FA812F;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+
+.table thead th
+{
+    background-color: #FA812F; /* citrus */
+    color: #FFFFFF;
+}
+.buscar{
+    background-color: #FA4032;
+    color: white;
+    border: none;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style/bootstrap/css/bootsrap-grid.min.css">
+        <link rel="stylesheet" href="style/bootstrap/css/bootsrap-utilities.min.css">
+         <link rel="stylesheet" href="style/zarape/index.css">
+        <style>
+            body {
+                font-family: 'Arial Black', Arial, sans-serif;
+                font-size: 14px;
+                 }
+                 .body-fondo
+            {
+                background-image: url('img/comida.jpg');
+                background-size: 100%
+            }
+                 
+        </style>
+    </head>
+    <body class="body-fondo">
+        <div class="container-fluid">
+            <div class="row justify-content-center text-center mt-3">
+                <h1>Bienvenido al Zarape</h1>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Datos de Acceso</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div>
+                                        <label for="txtUsuario"></label>
+                                        <input id="txtUsuario" type="text" class="form-control"  placeholder="Ingresa Usuario "/>
+                                    </div>
+                                    <div class="mt-2">
+                                        <label for="txtUsuario"></label>
+                                        <input id="txtContrasenia" type="password" class="form-control"  placeholder="Ingresa  Contrase&ntilde;a"/>
+                                    </div>
+                                    <div class="text-center mt-3">
+                                        <button class="btn Ingresar" 
+                                                onclick="validarUsuario();">Ingresar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="style/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="js/login.js"></script>
+    </body>
+</html>
